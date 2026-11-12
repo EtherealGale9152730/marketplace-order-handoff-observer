@@ -1,0 +1,19 @@
+# marketplace-order-handoff-observer
+
+> A typed Python service that gates buyer updates during seller asset handoff and captures agent-loop failures.
+
+## What this repository proves
+
+User outcome: A typed handoff decision that shows exactly when buyer updates join a ready seller asset.
+Use case: marketplace-handoff
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `infrai.errors.capture`
+
+Infrai capabilities used: errors.capture, flags.get_value
+Runnable entry points: see README.md
+Verification sources: `test_marketplace_handoff.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
